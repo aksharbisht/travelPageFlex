@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.intro{
+    background-color: #e9e7e7;
+}
+.navbar{
+    padding: 40px 120px;
+    display: flex;
+justify-content: space-between;
+}
+.links{
+    /* display: inline-block; */
+    width: 60%;
+}
+.links a{
+    text-decoration: none;
+    font-size: 21px;
+    letter-spacing: -1px;
+    color: #232323;
+    font-family: "Lato";
+    padding-right: 60px;
+}
+
+.contactBtn{
+    border: 3px solid black;
+    font-size: 21px;
+    letter-spacing: -1px;
+    color: #232323;
+    font-weight: 900;
+    font-family: "Lato";
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mainPage{
+    padding: 50px 120px 75px 120px;
+    background-image: url("../images/left_scribble.png"), url("../images/scribble_dark_7.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: left top 144px, right top 244px;
+    background-size: 480px, 95px;
+    display: flex;
+    justify-content: space-between;
+}
+.leftContent{
+    width: 35%;
+    translate: 0 -30px;
+}
+.mainText{
+    font-size: 36px;
+    letter-spacing: -2px;
+    line-height: 1;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+  
+}
+.subText{
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #232323;
+    font-weight: 400;
+    font-family: "Lato";
+    margin-top: 15px;
+}
+.reserveBtn{
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: #232323;
+    font-weight: bold;
+    font-family: "Lato";
+    font-size: 20px;
+    color: white;
+    width: 60%;
+    text-align: center;
+    padding: 12px 0;
+}
+.rightContent{
+    vertical-align: top;
+    width: 60%;
+ 
+}
+.rightImg{
+    float: right;
+    /* height: 423PX; */
+    
+}
+.rightImg img{
+    /* width: 89%; */
+    /* margin-left: 125px; */
+}
+.memories{
+    background: #232323;
+    color: white;
+    padding: 40px 0;
+    display: flex;
+}
+.memoryLeft, .memoryMid, .memoryRight{
+    width: 33%;
+}
+.memoryLeft img{
+    width: 90%;
+    translate: 0 -50px;
+    padding-top: 20px;
+}
+.memoryRight img{
+    width: 90%;
+    margin-left: 50px;
+    padding-top: 100px;
+}
+.midHeader{
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: -1px;
+    line-height: 0.9;
+    color: #e9e7e7;
+    font-weight: 700;
+    font-family: "Cardo";
+}
+.midText{
+    text-align: center;
+    margin-top: 15px;
+    font-family: "Lato";
+}
+.midBtn{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.logs{
+    border: 2px solid white;
+    width:40%;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-family: "Lato";
+    background: #232323;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.gallery{
+    background-color: #e9e7e7;
+    background-image: url("../images/gallery_left.png"), url("../images/gallery_right.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: left top 20px, right top 361px;
+    background-size: 40px, 65px;
+}
+.galleryContent{
+    padding: 8rem 6rem;
+    display: flex;
+}
+.gal{
+    margin: 0px 17px;
+}
+.line{
+    border: 1px solid black;
+    height: 2px;
+    width: 15%;
+    margin-top: 20px;
+}
+.galImage img{
+    width: 100%;
+}
+.galHeading{
+    width: 70%;
+    font-size: 36px;
+    letter-spacing: -1px;
+    line-height: 36px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+    margin-top: 20px;
+}
+.galText{
+    width: 100%;
+    margin-top: 20px;
+    color: #232323;
+    font-family: "Lato";
+    line-height: 0.9;
+}
+.places{
+    background-color: #e9e7e7;
+    background-image: url("../images/scribble_lightest.png");
+    background-repeat: no-repeat;
+    background-position: right top 20px;
+    background-size: 230px;
+}
+.placesContent{
+    padding: 5rem 6rem;
+}
+.placesImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.placesImage img{
+    height: 70px;
+}
+/* .tape{
+    position: relative;
+    right: 500px;
+    bottom: 300px;
+} */
+
+.placesTop{
+    text-align: center;
+}
+.placesMainText{
+    margin-top: 40px;
+    width: 84%;
+    font-size: 84px;
+    letter-spacing: -2px;
+    word-spacing: 10px;
+    line-height: 75px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+    padding-left: 19%;
+}
+.placesSubText{
+    margin-top: 50px;
+    padding-left: 24px;
+    font-size: 24px;
+    letter-spacing: -1px;
+    color: #232323;
+    font-weight: bold;
+    font-family: "Lato";
+}
+.placesArt{
+    position: relative;
+    right: 430px;
+    top: 10px;
+}
+.placesArt img{
+    width: 300px;
+}
+.placesBottom{
+    margin-top: 10rem;
+    display: flex;
+}
+.placesLeft{
+}
+.placesRight{
+    margin-left: 50px;
+    width: 50%;
+}
+.placesLeft img{
+    height: 580px;
+}
+
+.rightTop img{
+    height: 320px;
+}
+.bottomMain{
+    display: inline-block;
+    width: 35%;
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    text-decoration: underline;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+    margin-top: 40px;
+}
+.bottomSub{
+    display: inline-block;
+    width: 55%;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #232323;
+    font-weight: 600;
+    font-family: "Lato";
+    text-align: left;
+    translate: 100px -20px;
+}
+.bottomSub p{
+    padding-bottom: 10px;
+}
+.arrowImage{
+    float: right;
+    translate: 25px 0;
+}
+.arrowImage img {
+    width: 110px;
+}
+
+.trek{
+    background-color: #232323;
+    padding-top: 5rem;
+}
+.trekContent{
+    display: flex;
+    justify-content: space-between;
+}
+.trekText{
+    /* display: inline-block; */
+    width: 40%;
+    vertical-align: top;
+    padding-left: 6rem;
+}
+
+.trekImage{
+}
+.trekImage img{
+    /* width: 48vw; */
+    height: 488px;
+}
+.trekMain{
+ 
+    font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 55px;
+    color: #e9e7e7;
+    font-weight: 700;
+    font-family: "Cardo";
+}
+.trekSub{
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #e9e7e7;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: left;
+    padding: 20px 0;
+    
+}
+.trekFirst{
+    padding-top: 40px;
+}
+.trekSub h3{
+    padding-bottom: 20px;
+}
+.trekSub p{
+    font-size: 16px;
+}
+.trekPattern{
+    padding-top: 10px;
+}
+.trekPattern img{
+    width: 400px;
+}
+.listSection{
+    padding: 7rem 6rem;
+    background-color: #e9e7e7;
+}
+.listContent{
+    display: flex;
+}
+.listLeft{
+    vertical-align: top;
+    width: 60%;
+}
+.listRight{
+    padding-left: 80px;
+}
+.listLine{
+    border: 1px solid black;
+    height: 2px;
+}
+.listMainText{
+    font-size: 81px;
+    letter-spacing: -2px;
+    line-height: 81px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+}
+.listItems{
+    margin-top: 80px;
+}
+.listText{
+    padding: 10px 20px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #232323;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.listText img{
+    padding-left: 90px;
+    vertical-align: middle;
+}
+.testimonials{
+    background-color: hsl(0, 4%, 91%);
+    padding: 5rem 3rem;
+    background-image: url("../images/test_bg_top.png"), url("../images/test_bg_bottom.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: left -20px top 68px, right -170px top 621px;
+    background-size: 300px, 475px;
+}
+.testimonialHeading{
+    font-size: 81px;
+    letter-spacing: -2px;
+    line-height: 81px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.testimonialContent{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.testimonialBox{
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 30%;
+    margin: 30px 5px;
+    padding: 40px 20px;
+}
+.testimonialBox img{
+    height: 120px;
+}
+.customerName{
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #232323;
+    font-weight: 900;
+    font-family: "Lato";
+    text-align: center;
+    padding: 16px 0;
+}
+.review{
+    letter-spacing: 0px;
+    color: #6d6d6d;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.update{
+    background-color: #e9e7e7;
+    padding: 5rem 7rem;
+}
+.updateContent{
+    display: flex;
+    justify-content: space-between;
+}
+.updateLeft{
+    width: 50%;
+}
+
+.updateHeading{
+    font-size: 70px;
+    letter-spacing: -2px;
+    line-height: 81px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+    margin-bottom: 30px;
+}
+.updateForm input{
+    background-color: #e9e7e7;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #232323;
+    font-weight: 400;
+    font-family: "Lato";
+    padding: 10px 150px 10px 10px;
+    margin-bottom: 20px;
+}
+textarea{
+    background-color: #e9e7e7;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #232323;
+    font-weight: 400;
+    font-family: "Lato";
+    padding: 10px 165px 100px 10px;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+.sendMail{
+    margin-top: 30px;
+    border: 2px solid black;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Lato";
+    width: 360px;
+    padding: 10px 50px;
+    text-align: center;
+}
+.updateRight img{
+    height: 547px;
+ 
+}
+.footer{
+    background-color: #c4c4c4;
+    padding: 3rem 7rem;
+    background-image: url("../images/footer_bg.png");
+    background-repeat: no-repeat;
+    background-position: left -277px top 223px;
+    background-size: 515px;
+
+}
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+}
+.footerTitle{
+    width: 20%;
+    font-size: 63px;
+    letter-spacing: -2px;
+    line-height: 63px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+}
+.footerLinks{
+    padding-left: 50px;
+}
+.quickLinks{
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #232323;
+    font-weight: 900;
+    font-family: "Lato";
+    display: flex;
+}
+.linkSection{
+    padding-right: 80px;
+}
+.linkArea{
+    display: flex;
+}
+.linkSection a{
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    color: #232323;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: left;
+}
+
+.copyright{
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #232323;
+    font-weight: 400;
+    font-family: "Lato";
+    padding-top: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

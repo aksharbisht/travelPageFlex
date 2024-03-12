@@ -10,10 +10,9 @@
 .navbar{
     padding: 40px 120px;
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
 }
 .links{
-    /* display: inline-block; */
     width: 60%;
 }
 .links a{
@@ -36,6 +35,10 @@ justify-content: space-between;
     border-radius: 5px;
     cursor: pointer;
 }
+.contactBtn:hover {
+    background: black;
+    color: white;
+}
 .mainPage{
     padding: 50px 120px 75px 120px;
     background-image: url("../images/left_scribble.png"), url("../images/scribble_dark_7.png");
@@ -47,7 +50,8 @@ justify-content: space-between;
 }
 .leftContent{
     width: 35%;
-    translate: 0 -30px;
+    vertical-align: top;
+    
 }
 .mainText{
     font-size: 36px;
@@ -60,7 +64,6 @@ justify-content: space-between;
 }
 .subText{
     font-size: 17px;
-    letter-spacing: 0px;
     color: #232323;
     font-weight: 400;
     font-family: "Lato";
@@ -78,20 +81,12 @@ justify-content: space-between;
     text-align: center;
     padding: 12px 0;
 }
-.rightContent{
-    vertical-align: top;
-    width: 60%;
- 
+.reserveBtn:hover{
+    border-color: rgb(61, 61, 61);
+    background-color: rgb(61, 61, 61);
+    color: black;
 }
-.rightImg{
-    float: right;
-    /* height: 423PX; */
-    
-}
-.rightImg img{
-    /* width: 89%; */
-    /* margin-left: 125px; */
-}
+
 .memories{
     background: #232323;
     color: white;
@@ -128,8 +123,8 @@ justify-content: space-between;
 .midBtn{
     text-align: center;
     margin-top: 20px;
-
 }
+
 .logs{
     border: 2px solid white;
     width:40%;
@@ -186,10 +181,11 @@ justify-content: space-between;
     background-image: url("../images/scribble_lightest.png");
     background-repeat: no-repeat;
     background-position: right top 20px;
-    background-size: 230px;
+    background-size: 180px;
+    position: relative;
 }
 .placesContent{
-    padding: 5rem 6rem;
+    padding: 7rem 6rem;
 }
 .placesImage{
     display: flex;
@@ -199,11 +195,11 @@ justify-content: space-between;
 .placesImage img{
     height: 70px;
 }
-/* .tape{
-    position: relative;
-    right: 500px;
+.tape{
+    position: absolute;
+    left: 70px;
     bottom: 300px;
-} */
+}
 
 .placesTop{
     text-align: center;
@@ -241,10 +237,8 @@ justify-content: space-between;
     margin-top: 10rem;
     display: flex;
 }
-.placesLeft{
-}
 .placesRight{
-    margin-left: 50px;
+    margin-left: 40px;
     width: 50%;
 }
 .placesLeft img{
@@ -252,22 +246,23 @@ justify-content: space-between;
 }
 
 .rightTop img{
-    height: 320px;
+    height: 260px;
+}
+.rightBottom{
+    display: flex;
+    margin-top: 40px;
 }
 .bottomMain{
-    display: inline-block;
-    width: 35%;
-    font-size: 32px;
+    width: 40%;
+    font-size: 36px;
     letter-spacing: -1px;
-    line-height: 30px;
+    line-height: 40px;
     text-decoration: underline;
     color: #232323;
     font-weight: 700;
     font-family: "Cardo";
-    margin-top: 40px;
 }
 .bottomSub{
-    display: inline-block;
     width: 55%;
     font-size: 16px;
     letter-spacing: 0px;
@@ -275,17 +270,17 @@ justify-content: space-between;
     font-weight: 600;
     font-family: "Lato";
     text-align: left;
-    translate: 100px -20px;
+    padding-left: 30px;
 }
 .bottomSub p{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .arrowImage{
     float: right;
-    translate: 25px 0;
+    padding-right: 30px;
 }
 .arrowImage img {
-    width: 110px;
+    width: 100px;
 }
 
 .trek{
@@ -297,16 +292,12 @@ justify-content: space-between;
     justify-content: space-between;
 }
 .trekText{
-    /* display: inline-block; */
     width: 40%;
     vertical-align: top;
     padding-left: 6rem;
 }
 
-.trekImage{
-}
 .trekImage img{
-    /* width: 48vw; */
     height: 488px;
 }
 .trekMain{
@@ -344,7 +335,7 @@ justify-content: space-between;
     width: 400px;
 }
 .listSection{
-    padding: 7rem 6rem;
+    padding: 9rem 6rem;
     background-color: #e9e7e7;
 }
 .listContent{
@@ -373,7 +364,7 @@ justify-content: space-between;
     margin-top: 80px;
 }
 .listText{
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 17px;
     letter-spacing: 0px;
     color: #232323;
@@ -385,6 +376,9 @@ justify-content: space-between;
     padding-left: 90px;
     vertical-align: middle;
 }
+.listRight img{
+    height:438.750px;
+}
 .testimonials{
     background-color: hsl(0, 4%, 91%);
     padding: 5rem 3rem;
@@ -392,6 +386,7 @@ justify-content: space-between;
     background-repeat: no-repeat no-repeat;
     background-position: left -20px top 68px, right -170px top 621px;
     background-size: 300px, 475px;
+    position: relative;
 }
 .testimonialHeading{
     font-size: 81px;
@@ -403,6 +398,30 @@ justify-content: space-between;
     width: 60%;
     text-align: center;
     margin: auto;
+}
+.arrowLeft{
+    border: 2px solid black;
+    width: 60px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 400px;
+    left: 60px;
+    background-color: #e9e7e7;
+    font-size: 32px;
+    cursor: pointer;
+}
+.arrowRight{
+    border: 2px solid black;
+    width: 60px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: #e9e7e7;
+    font-size: 32px;
+    position: absolute;
+    top: 400px;
+    right: 60px;
+    cursor: pointer;
 }
 .testimonialContent{
     display: flex;
@@ -490,6 +509,7 @@ textarea{
     width: 360px;
     padding: 10px 50px;
     text-align: center;
+    cursor: pointer;
 }
 .updateRight img{
     height: 547px;
@@ -497,7 +517,7 @@ textarea{
 }
 .footer{
     background-color: #c4c4c4;
-    padding: 3rem 7rem;
+    padding: 6rem 7rem;
     background-image: url("../images/footer_bg.png");
     background-repeat: no-repeat;
     background-position: left -277px top 223px;
@@ -545,6 +565,9 @@ textarea{
     font-family: "Lato";
     text-align: left;
 }
+.phone{
+    display: none;
+}
 
 .copyright{
     letter-spacing: -1px;
@@ -557,3 +580,239 @@ textarea{
     text-align: center;
     justify-content: center;
 }
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .navbar{
+        padding: 43px 31px;
+    }
+    .contactBtn {
+        border: 2px solid black;
+        padding: 3px 16px;
+        font-size: 14px;
+    }
+    .links{
+        width: 65%;
+    }
+    .links a{
+        font-size: 18px;
+        padding-right: 2px;
+    }
+    .mainPage{
+        padding: 10px 30px;
+        flex-direction: column;
+        background-image: none;
+    }
+    .mainText h1{
+        font-size: 32px;
+    }
+    .leftContent{
+        width: 90%;
+    }
+    .reserveBtn{
+        margin-top: 16px;
+        font-size: 18px;
+        width: 50%;
+        padding: 12px 0;
+    }
+    .rightImg{
+        margin-top: 20px;
+    }
+    .rightImg img{
+        height: 197px;
+    }
+    .memoryLeft, .memoryRight{
+        display: none;
+    }
+    .memoryMid{
+        width: 90%;
+        margin: auto;
+    }
+    .midHeader{
+        font-size: 20px;
+       
+    }
+    .gallery{
+        background-image: none;
+        padding: 20px 20px;
+    }
+    .galleryContent{
+        padding: 0;
+        flex-direction: column;
+    }
+    .gal{
+        padding-bottom: 30px;
+    }
+    .places{
+        background-image: none;
+    }
+    .placesContent{
+        padding: 20px 10px;
+    }
+    .placesMainText{
+        font-size: 32px;
+        line-height: 1;
+        width: 90%;
+    }
+    .placesSubText{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .placesArt{
+        display: none;
+    }
+    .tape{
+        display: none;
+    }
+    .placesBottom{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .placesRight{
+        margin-left: 0;
+        width: 100%;
+    }
+    .placesLeft img{
+        height: 490px;
+    }
+    .rightTop img{
+        margin-top: 20px;
+        height: 274px;
+    }
+    .rightBottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .bottomMain{
+        width: 100%;
+        font-size: 32px;
+    }
+    .bottomSub{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .arrowImage img{
+        width: 80px;
+    }
+    .trek{
+        padding: 20px 20px;
+    }
+    .trekContent{
+        flex-direction: column;
+    }
+    .trekText{
+        width: 100%;
+        padding-left: 0;
+    }
+    .trekMain{
+        font-size: 40px;
+        line-height: 1;
+    }
+    .trekImage img{
+        height: 250px;
+    }
+    .trekPattern{
+        display: none;
+    }
+    .listSection{
+        padding: 20px 20px;
+    }
+    .listContent{
+        flex-direction: column;
+    }
+    .listItems{
+        margin-top: 20px;
+    }
+    .listLeft{
+        width: 100%;
+    }
+    .listMainText{
+        font-size: 40px;
+        line-height: 1;
+    }
+    .listText{
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+    .listText img{
+        padding-left: 54px;
+        translate: 20px -10px;
+    }
+    .listRight{
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .testimonials{
+        background-image: none;
+        padding: 20px 20px;
+    }
+    .testimonialHeading{
+        font-size: 40px;
+        line-height: 1;
+        width: 100%;
+    }
+    .arrowLeft, .arrowRight{
+        display: none;
+    }
+    .testimonialContent{
+        flex-direction: column;
+    }
+    .testimonialBox{
+        width: 90%;
+        margin: 10px 10px;
+        padding: 20px 20px;
+    }
+    .update{
+        padding: 20px 20px;
+    }
+    .updateContent{
+        flex-direction: column;
+    }
+    .updateLeft{
+        width: 100%;
+    }
+    .updateHeading{
+        font-size: 40px;
+    }
+    .updateForm input{
+        padding: 10px 100px 10px 10px;
+    }
+    textarea{
+        padding: 10px 115px 100px 10px;
+    }
+    .sendMail{
+        width: 310px;
+    }
+    .updateRight img{
+        height: 344px;
+    }
+    .footer{
+        padding: 20px 20px;
+        background-image: none;
+    }
+    .footerContent{
+        flex-direction: column;
+    }
+    .footerTitle{
+        width: 100%;
+        font-size: 40px;
+    }
+    .footerLinks{
+        padding-left: 0;
+    }
+    .linkArea{
+        flex-direction: column;
+    }
+    .pc{
+        display: none;
+    }
+    .phone{
+        display: flex;
+        flex-direction: row;
+    }
+    .linkSection{
+    
+    }
+  }

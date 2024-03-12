@@ -607,7 +607,7 @@ textarea{
 /* Media Queries */
 @media screen and (max-width: 600px) {
     .navbar{
-        padding: 43px 31px;
+        padding: 10px 10px;
     }
 
     #bar{
@@ -742,6 +742,7 @@ textarea{
     }
     .galHeading{
         width: 100%;
+        padding-bottom: 20px;
     }
     .galText{
         font-size: 20px;
@@ -782,7 +783,9 @@ textarea{
         width: 100%;
     }
     .placesLeft img{
-        height: 490px;
+        width: 355.688px;
+        height: 274px; 
+        object-fit: cover;
     }
     .rightTop img{
         margin-top: 20px;
@@ -864,6 +867,11 @@ textarea{
         padding-left: 0;
         padding-top: 20px;
     }
+    .listRight img{
+        width: 335px;
+        height: 274px; 
+        object-fit: cover;
+    }
     .testimonials{
         background-image: none;
         padding: 20px 20px;
@@ -873,9 +881,6 @@ textarea{
         line-height: 1;
         width: 100%;
     }
-    .arrowLeft, .arrowRight{
-        display: none;
-    }
     .testimonialContent{
         flex-direction: column;
     }
@@ -883,6 +888,11 @@ textarea{
         width: 90%;
         margin: 10px 10px;
         padding: 20px 20px;
+    }
+    .testArrowMobile{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
     }
     .update{
         padding: 10px 10px;
@@ -892,6 +902,9 @@ textarea{
     }
     .updateLeft{
         width: 100%;
+    }
+    .updateRight img{
+        margin-bottom: 20px;
     }
     .updateHeading{
         font-size: 40px;

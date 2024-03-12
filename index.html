@@ -5,12 +5,43 @@
     <title>Travel Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/style.css" />
+    <script>
+    function showbar()
+    {
+        let element = document.getElementById("bar");
+        const style = getComputedStyle(element);
+        if(style.display == "flex"){
+            element.style.display="none";
+        }
+        else{
+            element.style.display="flex";
+        }
+    
+    }
+    window.addEventListener("resize", (event) => {
+        console.log("size change");
+ 
+        if (checkWindowWidth(768)) {
+            const menu = document.getElementById("bar");
+            menu.style.display = "none";
+        }
+        });
+ 
+ 
+        function checkWindowWidth(width) {
+            return window.innerWidth >= width;
+        }
+
+    </script>
 </head>
 
 <body>
     <div class="container">
         <div class="intro">
             <div class="navbar">
+                <div class="hamburger" onclick="showbar()">
+                    <img src="public/images/hamburger.png" alt="">
+                </div>
                 <div class="links">
                     <div class="linkContent">
                         <a href="#" style=" font-weight: 900;">Home</a>
@@ -19,13 +50,22 @@
                         <a href="#">About</a>
                     </div>
                 </div>
+              
                 <div class="contactUs">
                     <div class="contactBtn">Contact Us</div>
                 </div>
+ 
+            </div>
+            <div class="show linkMobile" id="bar">
+                <a href="#" style=" font-weight: 900;">Home</a>
+                <a href="#">Guides</a>
+                <a href="#">Flights</a>
+                <a href="#">About</a>
             </div>
             <div class="mainPage">
+
                 <div class="leftContent">
-                    <div class="mainText">
+                    <div class="mainText pc">
                        <h1>Travel to your dream destination</h1>
                     </div>
                     <div class="subText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sit possimus vero ipsam nesciunt, sed aspernatur eveniet Lorem </div>
@@ -38,6 +78,9 @@
                         <img src="public/images/right_image.jpg" alt="mountain image" height="431px">
                     </div>
                 </div>
+                <div class="mainText phone">
+                    <h1>Travel to your dream destination</h1>
+                 </div>
             </div>
         </div>
         <div class="memories">
@@ -130,7 +173,7 @@
         <div class="trek">
             <div class="trekContent">
             <div class="trekText">
-                <div class="trekMain">
+                <div class="trekMain pc">
                     <p>Choose anywhere you'd like to go</p>
                 </div>
                 <div class="trekSub trekFirst">
@@ -146,6 +189,9 @@
             <div class="trekImage">
                 <img src="public/images/trek.png" alt="">
             </div>
+            <div class="trekMain phone">
+                <p>Choose anywhere you'd like to go</p>
+            </div>
         </div>
             <div class="trekPattern">
                 <img src="public/images/scribble_light.png" alt="">
@@ -159,22 +205,36 @@
                         <div class="listLine"></div>
                         <div class="listText">
                             Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do ei usmod
-                            <img src="public/images/plus.png" alt="" height="20px">
+                            <div class="plusImage">
+                            <img src="public/images/plus.png" alt="">
+                        </div>
                         </div>
                         <div class="listLine"></div>
                         <div class="listText">
+                            <div class="listTextItem">
                             Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do ei usmod
-                            <img src="public/images/plus.png" alt="" height="20px">
+                        </div>
+                            <div class="plusImage">
+                                <img src="public/images/plus.png" alt="">
+                            </div>
                         </div>
                         <div class="listLine"></div>
                         <div class="listText">
-                            Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do ei usmod
-                            <img src="public/images/plus.png" alt="" height="20px">
+                            <div class="listTextItem">
+                                Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do ei usmod
+                            </div>
+                            <div class="plusImage">
+                                <img src="public/images/plus.png" alt="">
+                            </div>
                         </div>
                         <div class="listLine"></div>
                         <div class="listText">
-                            Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do ei usmod
-                            <img src="public/images/plus.png" alt="" height="20px">
+                            <div class="listTextItem">
+                                Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do ei usmod
+                            </div>
+                            <div class="plusImage">
+                                <img src="public/images/plus.png" alt="">
+                            </div>
                         </div>
                         <div class="listLine"></div>
                     </div>

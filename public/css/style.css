@@ -12,6 +12,15 @@
     display: flex;
     justify-content: space-between;
 }
+
+#bar
+{
+    display:none;
+}
+
+.hamburger{
+    display: none;
+}
 .links{
     width: 60%;
 }
@@ -23,6 +32,7 @@
     font-family: "Lato";
     padding-right: 60px;
 }
+
 
 .contactBtn{
     border: 3px solid black;
@@ -373,6 +383,7 @@
 }
 
 .listText img{
+    height: 20px;
     padding-left: 90px;
     vertical-align: middle;
 }
@@ -586,21 +597,43 @@ textarea{
     .navbar{
         padding: 43px 31px;
     }
+
+    #bar{
+        width: 100%;
+    }    
+
     .contactBtn {
         border: 2px solid black;
         padding: 3px 16px;
         font-size: 14px;
     }
-    .links{
-        width: 65%;
+    .hamburger{
+        display: block;
     }
-    .links a{
-        font-size: 18px;
-        padding-right: 2px;
+    .hamburger img {
+        height: 20px;
+    }
+    .links{
+        /* width: 50%; */
+    }
+    .linkContent{
+        display: none;
+    }
+    .linkMobile{
+        display: flex;
+        justify-content: space-around;
+    }
+    .linkMobile a{
+        text-decoration: none;
+        font-size: 20px;
+        letter-spacing: -1px;
+        color: #232323;
+        font-family: "Lato";
+        padding-right: 5px;
     }
     .mainPage{
-        padding: 10px 30px;
-        flex-direction: column;
+        padding: 10px 20px;
+        flex-direction: column-reverse;
         background-image: none;
     }
     .mainText h1{
@@ -608,6 +641,9 @@ textarea{
     }
     .leftContent{
         width: 90%;
+    }
+    .pc{
+        display: none;
     }
     .reserveBtn{
         margin-top: 16px;
@@ -684,6 +720,9 @@ textarea{
         display: flex;
         flex-direction: column;
     }
+    .placesSubText{
+        padding-left: 0;
+    }
     .bottomMain{
         width: 100%;
         font-size: 32px;
@@ -700,13 +739,14 @@ textarea{
         padding: 20px 20px;
     }
     .trekContent{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .trekText{
         width: 100%;
         padding-left: 0;
     }
     .trekMain{
+        padding-bottom: 20px;
         font-size: 40px;
         line-height: 1;
     }
@@ -733,12 +773,9 @@ textarea{
         line-height: 1;
     }
     .listText{
-        font-size: 16px;
+        font-size: 14px;
         padding: 5px 10px;
-    }
-    .listText img{
-        padding-left: 54px;
-        translate: 20px -10px;
+        display: flex;
     }
     .listRight{
         padding-left: 0;

@@ -720,6 +720,9 @@ textarea{
         display: flex;
         flex-direction: column;
     }
+    .placesMainText{
+        padding-left: 0;
+    }
     .placesSubText{
         padding-left: 0;
     }

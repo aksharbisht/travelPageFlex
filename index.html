@@ -9,9 +9,25 @@
     function showbar()
     {
         let element = document.getElementById("bar");
+        let backDrop = document.querySelector(".backdrop")
+        const style = getComputedStyle(element);
+        if(style.display == "none"){
+            element.style.display="flex";
+            backDrop.style.display="flex";
+        }
+        else{
+            element.style.display="none";
+        }
+    
+    }
+    function hidebar()
+    {
+        let element = document.getElementById("bar");
+        let backDrop = document.querySelector(".backdrop")
         const style = getComputedStyle(element);
         if(style.display == "flex"){
             element.style.display="none";
+            backDrop.style.display="none";
         }
         else{
             element.style.display="flex";
@@ -61,6 +77,9 @@
                 <a href="#">Guides</a>
                 <a href="#">Flights</a>
                 <a href="#">About</a>
+            </div>
+            <div class="backdrop" onclick="hidebar()">
+
             </div>
             <div class="mainPage">
 

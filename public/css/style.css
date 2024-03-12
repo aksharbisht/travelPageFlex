@@ -922,7 +922,7 @@ textarea{
         width: 100%;
     }
     .updateRight img{
-       height: 390px;
+       height: 387px;
     }
     .footer{
         padding: 20px 20px;
@@ -944,6 +944,9 @@ textarea{
     .linkSection{
         width: 200px;
         padding-right: 0;
+    }
+    .copyright{
+        margin-top: 30px;
     }
     .pc{
         display: none;

@@ -11,28 +11,24 @@
         let element = document.getElementById("bar");
         let backDrop = document.querySelector(".backdrop")
         const style = getComputedStyle(element);
-        if(style.display == "none"){
-            element.style.display="flex";
-            backDrop.style.display="flex";
+        backDrop.style.display='block';
+        if(style.left == "-50%"){
+            element.style.left= "0%";
         }
         else{
-            element.style.display="none";
+            element.style.left="0%";
+
         }
     
     }
     function hidebar()
     {
+        console.log("hide clicked");
         let element = document.getElementById("bar");
-        let backDrop = document.querySelector(".backdrop")
+        let backDrop = document.querySelector(".backdrop");
         const style = getComputedStyle(element);
-        if(style.display == "flex"){
-            element.style.display="none";
-            backDrop.style.display="none";
-        }
-        else{
-            element.style.display="flex";
-        }
-    
+        element.style.left="-50%";
+        backDrop.style.display='none';
     }
     window.addEventListener("resize", (event) => {
         console.log("size change");
@@ -40,6 +36,7 @@
         if (checkWindowWidth(768)) {
             const menu = document.getElementById("bar");
             menu.style.display = "none";
+            element.style.left="-50%"
         }
         });
  

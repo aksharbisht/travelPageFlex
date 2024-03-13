@@ -641,9 +641,6 @@ textarea{
     .hamburger img {
         height: 20px;
     }
-    .links{
-        /* width: 50%; */
-    }
     .linkContent{
         display: none;
     }
@@ -948,6 +945,8 @@ textarea{
     }
     .copyright{
         margin-top: 30px;
+        padding-bottom: 20px;
+        font-size: large;
     }
     .pc{
         display: none;
